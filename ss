@@ -1,0 +1,12 @@
+user.name=GGboya
+user.email=630591905@qq.com
+credential.https://gitee.com.provider=generic
+url.https://github.com.insteadof=git://github.com
+credential.https://git.imooc.com.provider=generic
+http.sslverify=false
+credential.https://scm.tensorsecurity.cn.provider=gitlab
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+https.sslverify=false
