@@ -1,7 +1,6 @@
 package auth
 
 import (
-	"fmt"
 	"github.com/gin-gonic/gin"
 	v1 "gohub/app/http/controllers/api/v1"
 	"gohub/app/requests"
@@ -35,7 +34,6 @@ func (vc *VerifyCodeController) SendUsingPhone(c *gin.Context) {
 
 	// 1. 验证表单
 	request := requests.VerifyCodePhoneRequest{}
-	fmt.Println("走到了if ok 之前")
 
 	if ok := requests.Validate(c, &request, requests.VerifyCodePhone); !ok {
 		return
